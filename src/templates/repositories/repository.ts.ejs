@@ -1,0 +1,7 @@
+import { <%= props.importName %> } from '<%= props.importPath %>';
+
+export class <%= props.name %>Repository implements <%= props.importName %> {
+  execute(): Promise<void> {
+    throw new Error("Method not implemented."); 
+  }
+}

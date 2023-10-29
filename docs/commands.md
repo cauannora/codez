@@ -1,3 +1,5 @@
-# Command Reference for codez
+# Inicializando Arquitetura
 
-TODO: Add your command reference here
+```sh
+$ 
+```

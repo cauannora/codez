@@ -1,28 +1,29 @@
-# codez
+# CODEZ
 
 CLI para auxiliar na criação e padronização de projetos utilizando melhores praticas de arquitetura de software e padrão de código.
 
-# codez CLI
+### Conceitos
 
-A CLI for codez.
+Está CLI utiliza de conceitos de arquitetura de software e padrão de código, voltados para o Clean Architecture de Uncle Bob.
 
-## Customizing your CLI
+![Clean Architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
-
-```shell
-$ npm login
-$ npm whoami
-$ npm test
-
-$ npm run build
-
-$ npm publish
+Vamos sintetizar a geração de arquivos na seguinte estrutura:
 ```
+core
+  ├─application 
+  │ └─... (Onde ficaram as implementações dos casos de uso)
+  ├─domain
+  │ ├─entities 
+  │ │ └─... (Interface de entidades)
+  │ ├─repositories 
+  │ │ └─... (Interfaces de repositorio)
+  │ ├─use-cases 
+  │ │ └─... (Interface de caso de uso)
+  └─infrastructure 
+    └─ ... (Camada suja - Frameworks, libs e mais)
+```
+
 
 # License
 
